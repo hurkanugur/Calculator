@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:textAlignment="center"
+    android:layout_gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/hukoResultText"
+            android:layout_width="379dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="@dimen/cardview_compat_inset_shadow"
+            android:background="#322f3d"
+            android:text="\n\nC a l c u l a t i o n\nR e s u l t"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:backgroundTint="@color/black"/>
+        <TextView
+            android:id="@+id/hukoProcessText"
+            android:layout_width="379dp"
+            android:layout_height="50dp"
+            android:layout_margin="@dimen/cardview_compat_inset_shadow"
+            android:background="#322f3d"
+            android:text="P r o c e s s"
+            android:textAlignment="center"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            app:backgroundTint="@color/black"/>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/hukoButtonLog"
+                android:onClick="FunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="Log10"
+                android:textAlignment="center"
+                app:backgroundTint="#322f3d" />
+            <Button
+                android:id="@+id/hukoButtonSqrt"
+                android:onClick="FunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="Sqrt"
+                android:textAlignment="center"
+                app:backgroundTint="#322f3d" />
+            <Button
+                android:id="@+id/hukoButtonPower"
+                android:onClick="FunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="x^2"
+                android:textAlignment="center"
+                app:backgroundTint="#322f3d" />
+            <Button
+                android:id="@+id/hukoDelete"
+                android:onClick="NonFunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="Del"
+                android:textAlignment="center"
+                app:backgroundTint="#322f3d" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/hukoSin"
+                android:onClick="FunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="Sin"
+                app:backgroundTint="#322f3d" />
+
+            <Button
+                android:id="@+id/hukoCos"
+                android:onClick="FunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="Cos"
+                app:backgroundTint="#322f3d" />
+
+            <Button
+                android:id="@+id/hukoTan"
+                android:onClick="FunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="Tan"
+                app:backgroundTint="#322f3d" />
+
+            <Button
+                android:id="@+id/hukoCot"
+                android:onClick="FunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="Cot"
+                app:backgroundTint="#322f3d" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/hukoButton1"
+                android:onClick="NonFunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="7"
+                app:backgroundTint="#4b5d67" />
+
+            <Button
+                android:id="@+id/hukoButton2"
+                android:onClick="NonFunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="8"
+                app:backgroundTint="#4b5d67" />
+
+            <Button
+                android:id="@+id/hukoButton3"
+                android:onClick="NonFunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="9"
+                app:backgroundTint="#4b5d67" />
+
+            <Button
+                android:id="@+id/hukoButtonDivide"
+                android:onClick="ArithmeticButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="/"
+                app:backgroundTint="#322f3d" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/hukoButton4"
+                android:onClick="NonFunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="4"
+                app:backgroundTint="#4b5d67" />
+
+            <Button
+                android:id="@+id/hukoButton5"
+                android:onClick="NonFunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="5"
+                app:backgroundTint="#4b5d67" />
+
+            <Button
+                android:id="@+id/hukoButton6"
+                android:onClick="NonFunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="6"
+                app:backgroundTint="#4b5d67" />
+
+            <Button
+                android:id="@+id/hukoButtonMultiply"
+                android:onClick="ArithmeticButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="*"
+                app:backgroundTint="#322f3d" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/hukoButton7"
+                android:onClick="NonFunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="1"
+                app:backgroundTint="#4b5d67" />
+
+            <Button
+                android:id="@+id/hukoButton8"
+                android:onClick="NonFunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="2"
+                app:backgroundTint="#4b5d67" />
+
+            <Button
+                android:id="@+id/hukoButton9"
+                android:onClick="NonFunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="3"
+                app:backgroundTint="#4b5d67" />
+
+            <Button
+                android:id="@+id/hukoButtonMinus"
+                android:onClick="ArithmeticButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="-"
+                app:backgroundTint="#322f3d" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/hukoButtonDot"
+                android:onClick="NonFunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="."
+                app:backgroundTint="#322f3d" />
+
+            <Button
+                android:id="@+id/hukoButton0"
+                android:onClick="NonFunctionalButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="0"
+                app:backgroundTint="#4b5d67" />
+
+            <Button
+                android:id="@+id/hukoButtonEqual"
+                android:onClick="ArithmeticButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="="
+                app:backgroundTint="#322f3d" />
+
+            <Button
+                android:id="@+id/hukoButtonPlus"
+                android:onClick="ArithmeticButtonEvents"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:text="+"
+                app:backgroundTint="#322f3d" />
+        </LinearLayout>
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/developerInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/cardview_compat_inset_shadow"
+                android:background="#322f3d"
+                android:text="\nH u r k a n   U g u r"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:backgroundTint="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
